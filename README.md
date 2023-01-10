@@ -28,6 +28,11 @@ My personal learning space. Nothing to see here, except maybe for the links belo
   https://arxiv.org/abs/2109.01652
   https://github.com/google-research/FLAN/blob/main/flan/templates.py
 
+- 2021 An Attention Free Transformer\
+  Alternative Transformer design, very fast\n
+  https://arxiv.org/abs/2105.14103
+  https://github.com/BlinkDL/RWKV-LM
+
 - 2022 Chinchilla\
   50B model can outperform 175B GPT-3 and 280B Gopher when trained on more data (1.4T tokens)\
   https://arxiv.org/abs/2203.15556
