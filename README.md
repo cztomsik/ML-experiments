@@ -3,11 +3,11 @@ My personal learning space. Nothing to see here, except maybe for the links belo
 ## Interesting Papers
 
 - 2010 Understanding the difficulty of training deep feedforward neural networks\
-  Original paper for xavier init\n
+  Original paper for xavier init\
   http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf
 
 - 2015 All you need is a good init\
-  LSUV init for conv nets.\n
+  LSUV init for conv nets.\
   https://arxiv.org/abs/1511.06422
 
 - 2017 Attention is all you need\
@@ -22,8 +22,8 @@ My personal learning space. Nothing to see here, except maybe for the links belo
   New SOTA\
   https://arxiv.org/abs/1907.11692
 
-- 2019 Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\n
-  Sentence to vector. Vectors can be compared independently.\n
+- 2019 Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\
+  Sentence to vector. Vectors can be compared independently.\
   https://arxiv.org/abs/1908.10084
 
 - 2019 T5: Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer\
@@ -41,7 +41,7 @@ My personal learning space. Nothing to see here, except maybe for the links belo
   https://github.com/google-research/FLAN/blob/main/flan/templates.py
 
 - 2021 An Attention Free Transformer\
-  Alternative Transformer design, very fast\n
+  Alternative Transformer design, very fast\
   https://arxiv.org/abs/2105.14103
   https://github.com/BlinkDL/RWKV-LM
 
