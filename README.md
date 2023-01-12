@@ -53,3 +53,7 @@ My personal learning space. Nothing to see here, except maybe for the links belo
 - 2022 FLAN T5: Scaling Instruction-Finetuned Language Models\
   https://arxiv.org/abs/2210.11416
   https://github.com/google-research/FLAN/blob/main/flan/templates.py
+
+- 2022 One Embedder, Any Task: Instruction-Finetuned Text Embeddings\
+  It looks like it should be able to generate independently comparable embeddings, related against provided **zero-shot** task/domain, but I couldn't run the example.\
+  https://arxiv.org/abs/2212.09741
