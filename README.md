@@ -2,6 +2,14 @@ My personal learning space. Nothing to see here, except maybe for the links belo
 
 ## Interesting Papers
 
+- 2010 Understanding the difficulty of training deep feedforward neural networks\
+  Original paper for xavier init\n
+  http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf
+
+- 2015 All you need is a good init\
+  LSUV init for conv nets.\n
+  https://arxiv.org/abs/1511.06422
+
 - 2017 Attention is all you need\
   https://arxiv.org/abs/1706.03762
 
@@ -13,6 +21,10 @@ My personal learning space. Nothing to see here, except maybe for the links belo
   Improved BERT, Masking-only, dynamic masking, bigger batches, more data\
   New SOTA\
   https://arxiv.org/abs/1907.11692
+
+- 2019 Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks\n
+  Sentence to vector. Vectors can be compared independently.\n
+  https://arxiv.org/abs/1908.10084
 
 - 2019 T5: Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer\
   https://arxiv.org/abs/1910.10683
@@ -38,3 +50,6 @@ My personal learning space. Nothing to see here, except maybe for the links belo
   https://arxiv.org/abs/2203.15556
   https://www.lesswrong.com/posts/6Fpvch8RR29qLEWNH/chinchilla-s-wild-implications
 
+- 2022 FLAN T5: Scaling Instruction-Finetuned Language Models\
+  https://arxiv.org/abs/2210.11416
+  https://github.com/google-research/FLAN/blob/main/flan/templates.py
