@@ -36,14 +36,23 @@ My personal learning space. Nothing to see here, except maybe for the links belo
   Large enough model is capable of predicting the likely output from few examples in its prompt without any fine-tuning\
   https://arxiv.org/abs/2005.14165
 
+- 2020 An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale\
+  Transformers can be used for image recognition.\
+  https://arxiv.org/abs/2010.11929
+
+- 2020 Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention\
+  Transformer rewritten as RNN can be used for speeding-up the inference.\
+  https://arxiv.org/abs/2006.16236
+
 - 2021 FLAN: Finetuned Language Models Are Zero-Shot Learners\
   https://arxiv.org/abs/2109.01652
   https://github.com/google-research/FLAN/blob/main/flan/templates.py
 
 - 2021 An Attention Free Transformer\
-  Alternative Transformer design, very fast\
+  Alternative Transformer design\
   https://arxiv.org/abs/2105.14103
-  https://github.com/BlinkDL/RWKV-LM
+  - AFT-inspired time-mixing variation (WKV) with RNN/GPT mode, very fast\
+    https://github.com/BlinkDL/RWKV-LM
 
 - 2022 Chinchilla\
   50B model can outperform 175B GPT-3 and 280B Gopher when trained on more data (1.4T tokens)\
@@ -57,3 +66,7 @@ My personal learning space. Nothing to see here, except maybe for the links belo
 - 2022 One Embedder, Any Task: Instruction-Finetuned Text Embeddings\
   It looks like it should be able to generate independently comparable embeddings, related against provided **zero-shot** task/domain, but I couldn't run the example.\
   https://arxiv.org/abs/2212.09741
+
+- 2022 Efficient Training of Language Models to Fill in the Middle\
+  FIM can be learned for free in auto-regressive models\
+  https://arxiv.org/abs/2207.14255
