@@ -58,6 +58,11 @@ My personal learning space. Nothing to see here, except maybe for the links belo
   Alternative position embedding\
   https://arxiv.org/abs/2108.12409
 
+- 2022 FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness\
+  Very cool, but it needs custom CUDA kernel.\
+  https://github.com/HazyResearch/flash-attention
+  https://arxiv.org/abs/2205.14135
+
 - 2022 Chinchilla\
   50B model can outperform 175B GPT-3 and 280B Gopher when trained on more data (1.4T tokens)\
   https://arxiv.org/abs/2203.15556
