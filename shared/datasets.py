@@ -17,9 +17,8 @@ def causal(tokens, block_size=256, test_size=1500):
             end = i + self.block_size
             return self.data[i:end], self.data[i + 1:end + 1]
 
-    dataset = CausalDataset(tokens, block_size)
-    train = Subset(dataset, range(0, len(dataset) - test_size))
-    test = Subset(dataset, range(len(dataset) - test_size, len(dataset)))
+    train = CausalDataset(tokens[:-test_size], block_size)
+    test = CausalDataset(tokens[-test_size:], block_size)
     return train, test
 
 
