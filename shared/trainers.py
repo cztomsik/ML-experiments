@@ -74,8 +74,7 @@ class CausalWrapper(pl.LightningModule):
         ids = torch.tensor(self.tokenizer.encode(str).ids,
                            dtype=torch.long).unsqueeze(0).to(self.device)
         for _ in range(max_new_tokens):
-            #out = self(ids[:, -block_size:])
-            out = self(ids)
+            out = self(ids[:, -self.model.block_size:])
             logits = out[:, -1, :]
             v, _ = torch.topk(logits, top_k)
             logits[logits < v[:, [-1]]] = -float("Inf")
