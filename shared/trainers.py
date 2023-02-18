@@ -5,10 +5,10 @@ import lightning as pl
 
 
 class CausalTrainer(pl.Trainer):
-    def __init__(self, model, tokenizer, device="cpu", **kwargs):
+    def __init__(self, model, tokenizer, device="cpu", val_prompt="And now", **kwargs):
         super().__init__(max_epochs=0, accelerator="gpu" if device ==
                          "cuda" else device, **kwargs)
-        self.wrapper = CausalWrapper(model, tokenizer)
+        self.wrapper = CausalWrapper(model, tokenizer, val_prompt)
 
     def train(self, input, test_size=1_500, batch_size=1, epochs=1, epoch_size=6_000):
         block_size = self.wrapper.model.block_size
@@ -40,11 +40,12 @@ class CausalDataset(Dataset):
 
 
 class CausalWrapper(pl.LightningModule):
-    def __init__(self, model, tokenizer, lr=0.007):
+    def __init__(self, model, tokenizer, val_prompt, lr=0.007):
         super().__init__()
         self.lr = lr
         self.model = model
         self.tokenizer = tokenizer
+        self.val_prompt = val_prompt
 
     def forward(self, x, y=None):
         logits = self.model(x)
@@ -60,7 +61,7 @@ class CausalWrapper(pl.LightningModule):
         return loss
 
     def validation_epoch_end(self, outs):
-        print(self.generate("And now", 64))
+        print(self.generate(self.val_prompt, 64))
 
     def configure_optimizers(self):
         optim = torch.optim.Adam(self.parameters(), lr=self.lr)
