@@ -79,3 +79,16 @@ My personal learning space. Nothing to see here, except maybe for the links belo
 - 2022 Efficient Training of Language Models to Fill in the Middle\
   FIM can be learned for free in auto-regressive models\
   https://arxiv.org/abs/2207.14255
+
+- 2022 pNLP-Mixer: an Efficient all-MLP Architecture for Language\
+  Embedding-free MLP-mixer, which takes MinHash of per-word tokens through bottleneck mapping layer. Then it's just MLP-mixer. Small, fast, okish results, scales down nicely. Fixed-size.
+  https://arxiv.org/abs/2202.04350
+  https://github.com/mindslab-ai/pnlp-mixer
+
+- 2022 VCT: A Video Compression Transformer\
+  Lossless compression by entropy coding result from lossy transformer. Very cool.\
+  https://arxiv.org/abs/2206.07307
+
+- 2023 Toolformer: Language Models Can Teach Themselves to Use Tools\
+  LLMs can use in-context learning to use external tools/APIs\
+  https://arxiv.org/abs/2302.04761
