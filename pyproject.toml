@@ -1,0 +1,10 @@
+[project]
+name = "ml-experiments"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "datasets==3.1.0",
+    "mlx-lm==0.20.1",
+]
